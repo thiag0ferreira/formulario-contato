@@ -1,0 +1,29 @@
+<section>
+  <header>
+    <h2>Lista de contato</h2>
+    <button (click)="exibirTabela()">Mostrar mensagens</button>
+  </header>
+
+</section>
+<div *ngIf="exibir">
+<table>
+  <thead>
+  <tr class="tabela">
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Telefone</th>
+    <th>Endereço</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of listaFormulario">
+    <td>{{ item.id }}</td>
+    <td>{{ item.nome }}</td>
+    <td>{{ item.email }}</td>
+    <td>{{ item.telefone }}</td>
+    <td>{{ item.endereco }}</td>
+  </tr>
+  </tbody>
+</table>
+</div>

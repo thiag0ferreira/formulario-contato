@@ -1,0 +1,101 @@
+/* Estilos para o elemento header */
+header {
+  background-color: #333; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto no cabeçalho */
+  padding: 10px 0; /* Espaçamento interno no topo e na parte inferior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para o logotipo */
+.logo {
+  flex: 1; /* Ocupa o espaço disponível à esquerda */
+}
+
+.logo img {
+  width: 100px; /* Largura da imagem do logotipo */
+  height: auto; /* Altura ajustável para manter a proporção */
+}
+
+/* Estilos para a navegação */
+nav ul {
+  list-style: none; /* Remover marcadores de lista */
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px; /* Espaçamento entre os itens de menu */
+}
+
+nav a {
+  text-decoration: none; /* Remover sublinhado dos links */
+  color: #fff; /* Cor do texto do link */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 1em auto;
+  padding: 20px;
+  }
+
+
+/* Estilos para o elemento footer */
+footer {
+  position: fixed; /* Tornar o rodapé posicionamento fixo */
+  bottom: 0; /* Alinhar o rodapé na parte inferior da janela do navegador */
+  left: 0; /* Alinhar o rodapé à esquerda */
+  width: 100%; /* Ocupar a largura total da janela */
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto no rodapé */
+  padding: 5px 0; /* Espaçamento interno no topo e na parte inferior */
+}
+
+/* Estilos para o conteúdo do rodapé (a mesma seção que discutimos anteriormente) */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para a seção de informações de direitos autorais */
+.footer-info {
+  text-align: center;
+}
+
+.footer-info p {
+  font-size: 14px;
+}
+
+.botao-cancelar{
+  display: flex;
+  justify-content: flex-end;
+}
