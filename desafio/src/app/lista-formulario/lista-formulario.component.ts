@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Formulario} from "../formulario/formulario";
 import {FormularioService} from "../formulario.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-lista-formulario',
@@ -40,4 +41,18 @@ export class ListaFormularioComponent implements OnInit {
     return this.listaFormulario;
   }
 
+
+  editar(item: Formulario) {
+    console.log(item)
+    item.nome= "mudei";
+    this.service.editar(item).subscribe(
+      response => {
+        console.log('Requisição PUT bem-sucedida', response);
+      },
+      error => {
+        console.error('Erro na requisição PUT', error);
+      }
+    );
+
+  }
 }
