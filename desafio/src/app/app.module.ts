@@ -17,8 +17,7 @@ import { ListaFormularioComponent } from './lista-formulario/lista-formulario.co
     AppComponent,
     FormularioComponent,
     ListaFormularioComponent,
-
-  ],
+      ],
   imports: [
     CommonModule,
     HttpClientModule,

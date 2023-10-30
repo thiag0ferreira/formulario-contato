@@ -1,5 +1,5 @@
 export interface Formulario {
-  id?: number
+  id?: number;
   nome: string;
   email: string;
   telefone: string;

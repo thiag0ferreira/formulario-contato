@@ -4,6 +4,9 @@ import { Formulario } from "./formulario";
 import { FormularioService } from "../formulario.service";
 import { Router } from "@angular/router";
 
+
+
+
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
@@ -19,7 +22,8 @@ export class FormularioComponent implements OnInit {
 
   constructor(
     private service: FormularioService,
-    private router: Router) {}
+    private router: Router,
+    ) {}
 
   ngOnInit(): void {}
 
@@ -46,6 +50,11 @@ export class FormularioComponent implements OnInit {
 
     }
   }
+
+  editar(item: Formulario) {
+
+  }
+
 
   getErrorMessage(field: string) {
     if (this.formulario.get(field)?.hasError('required')) {
