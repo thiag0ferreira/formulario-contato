@@ -1,12 +1,15 @@
 /* Estilizando a seção */
 section {
-  background-color: #f0f0f0;
-  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 /* Estilizando o cabeçalho */
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
