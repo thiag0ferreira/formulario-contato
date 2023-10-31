@@ -2,16 +2,15 @@
 section {
   background-color: #333;
   color: #fff;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 20px;
 }
 
 /* Estilizando o cabeçalho */
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 h2 {
@@ -62,3 +61,4 @@ td, th {
   width: 20px;
   height: 20px;
 }
+
