@@ -53,7 +53,8 @@ footer {
   background-color: #333; /* Cor de fundo do rodapé */
   color: #fff; /* Cor do texto no rodapé */
   padding: 5px 0; /* Espaçamento interno no topo e na parte inferior */
-  z-index: 5;
+  z-index: 2;
+  height: 50px;
 }
 
 /* Estilos para o conteúdo do rodapé (a mesma seção que discutimos anteriormente) */
@@ -72,6 +73,8 @@ footer {
 .footer-links {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-links ul {
@@ -91,6 +94,9 @@ footer {
 /* Estilos para a seção de informações de direitos autorais */
 .footer-info {
   text-align: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-info p {
